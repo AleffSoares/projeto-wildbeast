@@ -21,6 +21,8 @@ a {
 
 img {
     max-width: 100%;
+    display: block;
+    border-radius: 5px;
 }
 
 .estrutura {
@@ -97,16 +99,56 @@ img {
 }
 
 
-
+/* CONTENT */
 
 .content {
     grid-area: content;
+    max-width: 900px;
+    margin:  0 auto;  /* Alinhar ao centro */
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
 }
+
+.col-wide {
+    grid-column: 1 / -1;
+}
+
+.imagem-1 {
+
+    grid-row: span 2;
+    align-self: end;
+}
+
+.imagem-2 {
+    align-self: end;
+}
+
+
+
+/* ANUNCIOS */
+
 
 .anuncios {
     grid-area: anuncios;
+    background:#fafbfc;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    grid-gap: 30px;
 }
+
+/*FOOTER */
 
 .footer {
     grid-area: footer;
+    background: linear-gradient(135deg, #8844ee, #B07DFB);
+
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
