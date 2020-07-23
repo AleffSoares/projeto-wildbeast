@@ -112,6 +112,72 @@ img {
   align-self: end;
 }
 
+/* ESTILOS CONTENT */
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.informacoes p + p {
+  margin-top: 30px;
+}
+
+/* TITULO */
+.titulo {
+  color: #B07DFB;
+}
+
+.titulo h1 {
+  font-size: 3.75em;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.titulo span {
+  font-size: 0.845em;
+  font-style: italic;
+}
+
+/*CARACTERISTICAS */
+.caract {
+  display: flex;
+  align-items: flex-start;
+}
+
+.caract > div {
+  width: 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #8844ee, #B07DFB);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  position: relative;
+}
+
+.caract > div:first-child {
+  margin-right: 30px;
+}
+
+.caract span {
+  display: block;
+  color: #B07DFB;
+}
+
+.numero {
+  font-size: 3em;
+  line-height: 1;
+  margin: 10px auto;
+}
+
+.rotulo {
+  background: white;
+  border-radius: 0 0 5px 5px;
+  padding: 5px 0;
+  position: relative;
+  top: 2px;
+}
+
 /* ANUNCIOS */
 .anuncios {
   grid-area: anuncios;
