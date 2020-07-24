@@ -27,6 +27,19 @@ img {
   grid-template-areas: "header header header" "sidenav content anuncios" "footer footer footer";
 }
 
+@media (max-width: 1200px) {
+  .estrutura {
+    grid-template-areas: "header header header" "sidenav content content" "sidenav anuncios anuncios" "footer footer footer ";
+  }
+}
+
+@media (max-width: 700px) {
+  .estrutura {
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "sidenav" "anuncios" "footer";
+  }
+}
+
 /* HEADER */
 .header {
   grid-area: header;
