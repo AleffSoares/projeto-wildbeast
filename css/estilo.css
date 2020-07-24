@@ -16,7 +16,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   border-radius: 5px;
 }
@@ -36,7 +36,7 @@ img {
 @media (max-width: 700px) {
   .estrutura {
     grid-template-columns: 100%;
-    grid-template-areas: "header" "sidenav" "anuncios" "footer";
+    grid-template-areas: "header" "sidenav" "content" "anuncios" "footer";
   }
 }
 
@@ -145,6 +145,12 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: auto;
+  }
 }
 
 .col-wide {
@@ -268,6 +274,7 @@ p {
   align-content: start;
   padding: 30px;
   grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /*FOOTER */
